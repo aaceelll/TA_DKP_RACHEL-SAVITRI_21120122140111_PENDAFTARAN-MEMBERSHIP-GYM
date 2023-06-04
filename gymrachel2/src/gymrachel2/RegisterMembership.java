@@ -446,6 +446,8 @@ public class poptext {
         }
         else  {
             aktiv.aktivasi();
+            aktivasiButton.setEnabled(false);
+            jCombojenispaket.setEnabled(false);
             }                    
     }//GEN-LAST:event_aktivasiButtonMouseClicked
 
@@ -499,7 +501,6 @@ public class poptext {
         txtarea.setText("");
         btnkelamin.clearSelection();     
         jCombojenispaket.setEnabled(false);
-        validasibutton.setEnabled(false);
     }//GEN-LAST:event_resetButtonMouseClicked
 
     private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetButtonActionPerformed
@@ -507,6 +508,7 @@ public class poptext {
         resetComboBox();
         rdlaki.setEnabled(true);
         rdperempuan.setEnabled(true);
+        aktivasiButton.setEnabled(true);
     }//GEN-LAST:event_resetButtonActionPerformed
     public void resetComboBox() {
         DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>();
